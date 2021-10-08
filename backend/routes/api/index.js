@@ -6,6 +6,9 @@ router.use('/session', sessionRouter);
 
 router.use('/users', usersRouter);
 
+const spotsRouter = require("./spots.js");
+router.use("/spots", spotsRouter)
+
 
 // GET /api/set-token-cookie
 // const asyncHandler = require('express-async-handler');
