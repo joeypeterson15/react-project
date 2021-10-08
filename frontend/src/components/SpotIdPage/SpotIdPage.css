@@ -1,0 +1,8 @@
+.spot-detail-div {
+    display: flex;
+    justify-content: space-around;
+}
+.spot-detail-images {
+    width: 400px;
+    height: 400px;
+}

@@ -9,6 +9,13 @@ const load = list => ({
 })
 
 
+//action for getting one?
+// const getSpot = spot => ({
+//     type: ADD_ONE,
+//     spot
+// })
+
+
 //thunk action for getting all spots
 
 export const getSpots = () => async dispatch => {
@@ -21,6 +28,15 @@ export const getSpots = () => async dispatch => {
         dispatch(load(list))
     }
 }
+
+// export const getSpotDetail = (spotId) => async dispatch => {
+//     const response = await fetch(`/api/spots/${spotId}`)
+
+//     if (response.ok) {
+//         const spot = await response.json()
+//         dispatch(getSpot(spot))
+//     }
+// }
 
 const initialState = {
     list: []
