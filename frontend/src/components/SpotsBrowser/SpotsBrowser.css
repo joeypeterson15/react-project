@@ -10,7 +10,7 @@
 }
 
 .spots-img:hover {
-    margin-bottom: 5px;
+    padding-bottom: 5px;
     box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 .spots-img {
