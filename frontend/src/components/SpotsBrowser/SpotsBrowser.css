@@ -7,6 +7,7 @@
     margin-left: 20%;
     margin-right: 20%;
     grid-row-gap: 100px;
+    grid-column-gap: 50px;
 }
 
 .spots-img:hover {

@@ -11,9 +11,6 @@ router.get('/', asyncHandler(async function(req, res) {
     res.json(list)
 }))
 
-// router.get('/:id'. asyncHandler(async function(req, res) {
-//     const spot = await Spot.one(req.params.id);
-//     res.json(spot)
-// }))
+
 
 module.exports = router;

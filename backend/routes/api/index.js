@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const sessionRouter = require('./session.js');
 const usersRouter = require('./users.js');
+const reviewsRouter = require('./reviews.js')
 
 router.use('/session', sessionRouter);
 
@@ -8,6 +9,7 @@ router.use('/users', usersRouter);
 
 const spotsRouter = require("./spots.js");
 router.use("/spots", spotsRouter)
+router.use("/reviews", reviewsRouter)
 
 
 // GET /api/set-token-cookie

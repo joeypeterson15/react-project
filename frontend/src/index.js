@@ -7,7 +7,8 @@ import App from './App';
 import configureStore from './store';
 import { restoreCSRF, csrfFetch } from './store/csrf';
 import * as sessionActions from './store/session';
-import  getSpots  from './store/spots';
+import getSpots from './store/spots';
+import getReviews from './store/reviews';
 
 const store = configureStore();
 
@@ -17,7 +18,8 @@ if (process.env.NODE_ENV !== 'production') {
   window.csrfFetch = csrfFetch;
   window.store = store;
   window.sessionActions = sessionActions;
-  window.getSpots = getSpots
+  window.getSpots = getSpots;
+  window.getReviews = getReviews;
 }
 
 function Root() {

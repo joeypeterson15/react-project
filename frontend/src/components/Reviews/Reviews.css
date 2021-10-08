@@ -1,0 +1,29 @@
+.reviews-container {
+    background-color: white;
+    margin: auto;
+    width: 50%;
+    /* align-items: center; */
+    /* margin-left: 50%; */
+}
+
+.reviews-detail-page > div {
+    padding: 50px;
+}
+
+.add-review-form {
+    /* margin: auto; */
+    padding: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+#text-for-review {
+    width: 100px;
+    height: 100px;
+}
+
+.line {
+   
+      box-shadow: 0 0.5px 0 black;
+
+  }
