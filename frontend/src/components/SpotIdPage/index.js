@@ -5,6 +5,7 @@ import { getSpots } from '../../store/spots';
 import { getReviews } from '../../store/reviews';
 import { useEffect } from 'react';
 import  Reviews  from '../Reviews/index.js'
+import SpotCards from '../SpotCards';
 import './SpotIdPage.css'
 
 export default function SpotIdPage () {
@@ -26,12 +27,13 @@ export default function SpotIdPage () {
                 <img className="spot-detail-images" alt={spot?.id} src={spot?.imageUrl}></img>
                 <img className="spot-detail-images" alt={spot?.id} src={spot?.imageUrl}></img>
             </div>
-            {/* <div className="reviews-detail-page"> Reviews
-                {reviews.map((review) => (
-                    <p>{review.content}</p>
-                ))}
-            </div> */}
-            <Reviews reviews={reviews}/>
+            <div class="text" id="spot-name">{spot?.name}</div>
+            <div className="description-container">
+                <span className="text" >Description</span>
+                <span id="spot-description">{spot?.description}</span>
+            </div>
+            <SpotCards />
+            <Reviews spotId={spot?.id} reviews={reviews}/>
         </>
     );
 }

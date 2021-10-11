@@ -8,6 +8,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      name: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
       location: {
         allowNull: false,
         type: Sequelize.STRING
@@ -17,6 +21,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       imageUrl: {
+        allowNull: false,
+        type: Sequelize.STRING
+      },
+      description: {
         allowNull: false,
         type: Sequelize.STRING
       },

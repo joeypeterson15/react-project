@@ -1,6 +1,10 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Spot = sequelize.define('Spot', {
+    name: {
+      allowNull: false,
+      type: DataTypes.STRING,
+    },
     location: {
       allowNull: false,
       type: DataTypes.STRING
@@ -10,6 +14,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING
     },
     imageUrl: {
+      allowNull: false,
+      type: DataTypes.STRING
+    },
+    description: {
       allowNull: false,
       type: DataTypes.STRING
     },
