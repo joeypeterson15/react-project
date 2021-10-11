@@ -32,9 +32,7 @@ export const getReviews = (spotId) => async dispatch => {
 
 //ADD A REVIEW
 export const createReview = (payload, spotId) => async dispatch => {
-    console.log('YELLLOOOOOOO')
     const token = Cookies.get('XSRF-TOKEN');
-    console.log(token)
     const response = await fetch(`/api/reviews/${spotId}`, {
       method: 'POST',
       headers: {
